@@ -20,7 +20,7 @@ printf "${kuning}	______________________________________________________________
 rm award.tmp aid.txt info.tmp 2> /dev/null
 printf "${kuning}[!]${NC} Insert Your Newscat Token: "; read token
 printf "${kuning}[!]${NC} Checking Token..."
-checktoken=$(curl -s -d "token=$token" 'http://www.newscat.com/api/user/info' -o "info.tmp")
+checktoken=$(curl -s -d "token=$token" ' git: https://github.com/raraid40/bayawak-bayawak/bayawak.git ' -o "info.tmp")
 getok=$(cat info.tmp | grep -Po '(?<=message":")[^"]*')
 getid=$(cat info.tmp | grep -Po '(?<=id":")[^"]*')
 gold=$(cat info.tmp | grep -Po '(?<="gold":)[^,]*')
